@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/projects/selenuim-learing">
+        <classes>
+            <class name="com.romio.AssignmentFormProtrector">
+                <methods>
+                    <include name="openLogin"/>
+                </methods>
+            </class>
+            <class name="com.romio.CuraHealthCare">
+                <methods>
+                    <include name="testHeader"/>
+                    <include name="testFooter"/>
+                    <include name="testFirstPage"/>
+                </methods>
+            </class>
+            <class name="com.romio.HomePageTestCase">
+                <methods>
+                    <include name="testHomePageWithDirectLink"/>
+                    <include name="testHomePageWithSideBar"/>
+                </methods>
+            </class>
+            <class name="com.romio.LogingPageTestCase">
+                <methods>
+                    <include name="testLogInPage"/>
+                    <include name="testLogInPageWithValidInput"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
